@@ -4,6 +4,78 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:layout_gravity="center"
 	tools:context="com.studevs.mobile.android.daily_account.MainActivity">
-
+	
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<TextView
+			android:id="@+id/tvWelcomeMessage"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="394dp"
+			android:layout_marginTop="68dp"
+			android:gravity="center_horizontal"
+			android:text="Please Loin / Sign Up"
+			android:textColor="@color/colorPrimary"
+			android:textSize="36sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</android.support.constraint.ConstraintLayout>
+	
+	<LinearLayout
+		android:layout_width="368dp"
+		android:layout_height="495dp"
+		android:gravity="center"
+		android:orientation="vertical"
+		tools:layout_editor_absoluteX="8dp"
+		tools:layout_editor_absoluteY="8dp">
+		
+		<EditText
+			android:id="@+id/etUsername"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="Username"
+			android:inputType="text|textPersonName"
+			android:textAlignment="center" />
+		
+		<EditText
+			android:id="@+id/etPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:textAlignment="center" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+			<Button
+				android:id="@+id/btnSignup"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@color/colorPrimaryDark"
+				android:text="Sign Up" />
+			
+			<Button
+				android:id="@+id/btnLogin"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_weight="1"
+				android:background="@color/colorPrimary"
+				android:text="Login" />
+		</LinearLayout>
+	</LinearLayout>
 </android.support.constraint.ConstraintLayout>
